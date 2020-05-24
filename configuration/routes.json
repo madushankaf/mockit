@@ -38,8 +38,60 @@
             "delay": "0",
             "payload": {
                 "authenticated": true,
-                "token": "xxxxxxxxxx"
+                "token": "xxxxxxxxxx",
+                "id": "dfgabcdh"
             },
+            "headers": []
+        },
+        {
+            "id": "72708ad2-40eb-46b9-8102-07860132ef8b",
+            "route": "/orders",
+            "httpMethod": "POST",
+            "statusCode": "200",
+            "delay": "0",
+            "payload": {
+                "retailerId": "",
+                "invoiceId": "",
+                "orderId": "",
+                "userId": 7655,
+                "item": "Cheese",
+                "qty": 45,
+                "unit": "packets",
+                "orderStatus": "Pending"
+            },
+            "headers": []
+        },
+        {
+            "id": "f0f2194b-dc88-46bf-bdae-28a203556d01",
+            "route": "/auth",
+            "httpMethod": "POST",
+            "statusCode": "200",
+            "delay": "0",
+            "payload": {
+                "name": "Madushanka",
+                "userId": "7655",
+                "isAuthenticated": "true;"
+            },
+            "headers": []
+        },
+        {
+            "id": "c3b9a000-a317-4472-a7cc-c9ae75d84398",
+            "route": "/users/7455/orders",
+            "httpMethod": "GET",
+            "statusCode": "200",
+            "delay": "0",
+            "payload": [
+                {
+                    "retailerId": "",
+                    "invoiceId": "",
+                    "orderId": "",
+                    "userId": 7655,
+                    "item": "Cheese",
+                    "qty": 45,
+                    "unit": "packets",
+                    "orderStatus": "Pending"
+                }
+            ],
             "headers": []
         }
     ]
